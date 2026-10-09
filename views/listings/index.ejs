@@ -4,12 +4,26 @@
         <form method="GET" action="/listings/new">
             <button>newList</button>
         </form>
-      <ul>
-    <% for(let listings of allListings){%>
-        <li><a href="/listings/<%=listings._id %>"><%=listings.title%></a></li>
-    <%}%>
 
-    </ul>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            
+        <% for(let listings of allListings){%>
+        <section class="card col" style="max-width: 340px">
+  <img src="<%=listings.image.url%>" class="card-img-top" alt="Listings Image">
+  <div class="card-body">
+    <h4 class="card-title"><%=listings.title%></h4>
+   
+    <p class="card-text"></p>
+  &#8377; <%= listings.price != null ? listings.price.toLocaleString("en-IN") : "N/A" %> /night
+    <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</section>
+  <% } %>
+        </div>
+
+
+    
+    
 </body>
 
 
