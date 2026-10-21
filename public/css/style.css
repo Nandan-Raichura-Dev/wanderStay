@@ -108,4 +108,23 @@ body {
     font-weight:600;
 }
 
+/* show page */
+
+.show-image{
+    height:30vh;
+}
+
+.btns{
+    display:flex;
+    gap:1rem;
+    margin-top:2rem;
+
+ 
+}
+
+.edit-btns{
+ color:#fe424d !important;
+   
+}
+
 
