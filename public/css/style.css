@@ -98,7 +98,14 @@ body {
 }
 
 .container {
-    flex: 1 0 auto;
+    flex: 1;
+}
+
+.add-btn{
+    margin-top:2rem;
+    color:#fe424d;
+    background-color:white;
+    font-weight:600;
 }
 
 
