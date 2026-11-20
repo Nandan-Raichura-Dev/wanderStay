@@ -107,7 +107,8 @@ app.get("/listings/:id/edit",wrapAsync(async(req,res)=>{
       // error catching middleware
       let {statusCode=500, message="something went wrong"}=err;
 
-      res.status(statusCode).send(message);
+      res.status(statusCode).render("error.ejs",{message});
+      //res.status(statusCode).send(message);
    });
 
 
